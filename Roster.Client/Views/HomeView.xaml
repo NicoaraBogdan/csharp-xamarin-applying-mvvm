@@ -18,9 +18,10 @@
             x:FieldModifier="public" 
             Command="{Binding UpdateApplicationCommand, Mode=OneTime}"
             Text="Update Application" />
-        <ListView x:Name="PeopleListView" x:FieldModifier="public" VerticalOptions="FillAndExpand">
+        <ListView x:Name="PeopleListView" x:FieldModifier="public" ItemsSource="{Binding People, Mode=OneWay}" VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Company}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
