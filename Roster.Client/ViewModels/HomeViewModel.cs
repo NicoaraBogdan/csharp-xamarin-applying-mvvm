@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using Xamarin.Forms;
 
 namespace Roster.Client.ViewModels
 {
@@ -20,5 +21,7 @@ namespace Roster.Client.ViewModels
                 }
             }
         }
+
+        public Command UpdateApplicationCommand { get; set; }
     }
 }
