@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Roster.Client.Models;
+using Xamarin.Forms;
 
 namespace Roster.Client.Views
 {
@@ -8,6 +9,7 @@ namespace Roster.Client.Views
         public HomeView()
         {
             InitializeComponent();
+            BindingContext = new MyCustomModel { Title = "Roaster App" };
         }
     }
 }
