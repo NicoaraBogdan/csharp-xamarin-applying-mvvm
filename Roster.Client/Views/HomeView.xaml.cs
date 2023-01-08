@@ -9,7 +9,7 @@ namespace Roster.Client.Views
         public HomeView()
         {
             InitializeComponent();
-            BindingContext = new MyCustomModel { Title = "Roaster App" };
+            BindingContext = new MyCustomModel { Title = "Roster App" };
         }
     }
 }
