@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Roster.Client.Models
 {
-    public class MyCustomModel
+    public class Person
     {
-        public string Title { get; set; }
+        public string Name { get; set; }
+        public string Company { get; set; }
     }
 }
