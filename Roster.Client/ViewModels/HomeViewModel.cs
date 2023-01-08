@@ -18,10 +18,19 @@ namespace Roster.Client.ViewModels
                 if (value != _title)
                 {
                     _title = value;
+                    PropertyChanged(this, new PropertyChangedEventArgs(nameof(Title)));
                 }
             }
         }
 
         public Command UpdateApplicationCommand { get; set; }
+
+        public HomeViewModel()
+        {
+            UpdateApplicationCommand = new Command(() =>
+            {
+                Title = "Roster App (v2.0)";
+            });
+        }
     }
 }
