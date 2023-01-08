@@ -36,17 +36,11 @@ namespace Roster.Client.ViewModels
                 Title = "Roster App (v2.0)";
             });
 
-            LoadData();
+            People = new ObservableCollection<Person>();
+            People.Add(new Person { Name = "Delores Feil", Company = "Legros Group" });
+            People.Add(new Person { Name = "Ann Zboncak", Company = "Ledner - Ferry" });
+            People.Add(new Person { Name = "Jaime Lesch", Company = "Herzog and Sons" });
         }
 
-        private void LoadData()
-        {
-            People = new ObservableCollection<Person>();
-            {
-                new Person { Name = "Delores Feil", Company = "Legros Group" };
-                new Person { Name = "Ann Zboncak", Company = "Ledner - Ferry" };
-                new Person { Name = "Jaime Lesch", Company = "Herzog and Sons" };
-            }
-        }
     }
 }
